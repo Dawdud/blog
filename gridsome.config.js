@@ -6,6 +6,7 @@
 
 module.exports = {
   siteName: "ZAPISKI Z FRONTU",
+  siteUrl: "http://localhost:8080",
   siteDescription: "blog o vue,react, javascript oraz programowaniu ogółem",
   titleTemplate: `%s - Gridsome`,
   plugins: [
@@ -16,6 +17,23 @@ module.exports = {
       options: {
         path: "blog/**/*.md",
         typeName: "Post"
+      }
+    },
+    {
+      use: "@gridsome/plugin-sitemap",
+      options: {
+        cacheTime: 600000,
+        exclude: ["/exclude-me"],
+        config: {
+          "/blog/*": {
+            changefreq: "weekly",
+            priority: 0.5
+          },
+          "/about": {
+            changefreq: "monthly",
+            priority: 0.7
+          }
+        }
       }
     }
   ]
