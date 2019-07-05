@@ -1,11 +1,6 @@
 @import "utils/variables";
 @import "utils/mixins";
 .post {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
   &__title {
     text-decoration: none;
     color: black;
@@ -93,7 +88,10 @@
       width: 70%;
     }
     @include desktop {
-      width: 40%;
+      width: 95%;
+      &--view {
+        width: 40%;
+      }
     }
   }
 
@@ -102,6 +100,31 @@
       width: 100%;
       height: auto;
     }
+  }
+}
+@include smartphone {
+  .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@include tablet {
+  .post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@include desktop {
+  .post {
+    display: flex;
+    position: relative;
+    align-self: center;
+
+    width: 45%;
   }
 }
 

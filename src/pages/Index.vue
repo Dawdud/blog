@@ -1,6 +1,11 @@
 <template>
   <Layout>
-    <PostCard />
+    <div class="main__content">
+      <div class="container">
+        <PostCard />
+        
+      </div>
+    </div>
     <Pager :info="$page.posts.pageInfo" />
   </Layout>
 </template>
@@ -30,10 +35,12 @@ query Posts ($page: Int){
 <script>
 import { Pager } from "gridsome";
 import PostCard from "../layouts/blog/PostCard";
+import Sidebar from "../layouts/Sidebar";
 export default {
   components: {
     Pager,
-    PostCard
+    PostCard,
+    Sidebar
   }
 };
 </script>

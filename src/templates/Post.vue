@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="blog">
-      <div class="post__cart">
+      <div class="post__cart post__cart--view">
         <Header :post="$page.post"></Header>
         <div class="post__content post__content--blog" v-html="$page.post.content" />
       </div>
