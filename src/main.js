@@ -26,4 +26,8 @@ export default function(Vue, { router, head, isClient }) {
     href:
       "https://fonts.googleapis.com/css?family=Thasadith:700&display=swap&subset=latin-ex"
   });
+  head.meta.push({
+    name: "google-site-verification",
+    content: "qVCsJdukxGzeBaEnyBItlMpHM4oINE9GhznID4iD-ZM"
+  });
 }
