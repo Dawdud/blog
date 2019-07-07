@@ -16,7 +16,11 @@ module.exports = {
       use: "@gridsome/source-filesystem",
       options: {
         path: "blog/**/*.md",
-        typeName: "Post"
+        route: "/blog/:slug",
+        typeName: "Post",
+        remark: {
+          plugins: ["@gridsome/remark-prismjs"]
+        }
       }
     },
     {
