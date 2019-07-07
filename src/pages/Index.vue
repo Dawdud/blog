@@ -6,7 +6,7 @@
 </template>
 <page-query>
 query Posts ($page: Int){
-  posts: allPost (perPage: 2, page: $page) @paginate {
+  posts: allPost (perPage: 5, page: $page) @paginate {
     totalCount
     pageInfo {
       totalPages

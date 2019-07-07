@@ -30,9 +30,7 @@ export default {
     };
   },
   methods: {
-    showprops: function() {
-      console.log(this.$page.post.title);
-    }
+    
   },
   components: {
     Header
