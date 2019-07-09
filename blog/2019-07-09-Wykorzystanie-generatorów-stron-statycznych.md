@@ -1,6 +1,6 @@
 ---
 title: Wykorzystanie generatorów stron statycznych.
-date: 2019-07-09  16:02
+date: 2019-07-09 16:02:34
 description: "Każdy chyba kojarzy stronę na której  po wejściu otrzymujemy  nawigację, treść, która nie ulega zmianie i stopkę. Stronę bez formularzy, bez logowania  i która nie zmienia swojego wyglądu dynamicznie. Jednym słowem zwykła strona, która może posłużyć na przykład jako bardzo prosta wizytówka  firmy.  Pierwsza strona internetowa, która powstała w sierpniu 1991 roku za sprawą Tima-Bernersa-Lee  była właśnie ową stroną statyczną."
 image: "./images/engine-3480737_1920.jpg"
 slug: first
