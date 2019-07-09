@@ -8,7 +8,7 @@ module.exports = {
   siteName: "ZAPISKI Z FRONTU",
   siteUrl: "http://localhost:8080",
   siteDescription: "blog o vue,react, javascript oraz programowaniu ogółem",
-  titleTemplate: `%s - Gridsome`,
+  titleTemplate: `%s`,
   plugins: [
     "@gridsome/remark-prismjs",
 
