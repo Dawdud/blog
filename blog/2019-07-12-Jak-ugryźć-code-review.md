@@ -1,5 +1,5 @@
 ---
-title: Jak ugryźć code review.
+title: Jak ugryźć code review?
 date: 2019-07-12 20:17:34
 description: "W zamierzchłych czasach, gdy zaczynałem programować i pisałem swoje pierwsze projekty, bałem się przedstawić kawałek swojego kodu w obawie, że będzie kiepski i zostanę wyśmiany. Code review napawało mnie strachem przed tym że zbłaźnię się pokazując swój projekt. Często też tłumaczyłem swój strach wmawiając sobie, że przecież jestem dobrym programistą, a mój kod jest nie tylko czytelny dla drugiej osoby, ale też używam dobrych praktyk programując. Nie wszystko okazało się prawdą z perspektywy czasu, a ściślej biorąc nic."
 
