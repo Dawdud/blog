@@ -1,4 +1,4 @@
----
+﻿---
 title: Nowe Wyzwanie
 date: 2019-07-20 12:34:34
 description: "18 lipca 2019 roku odebrałem telefon i to co usłyszałem podnosząc słuchawkę, sprawiło, że czułem czystą radość, a zarazem przerażenie. Zostałem zatrudniony w pewnym niewielkim polskim oddziale firmy zagranicznej jako programista. Sprawiło to że nie raz pojawił się uśmiech na mojej twarzy tamtego dnia. Pomyślałem więc że będzie to unikalny post w którym podzielę się przemyśleniami na temat rekrutacji, którą udało mi się przejść pomyślnie. Zdecydowanie będzie to post bardzo osobisty."
@@ -34,3 +34,4 @@ Jak dziś spoglądam na ten projekt to najchętniej wyrzuciłbym z niego połow�
 ## Sukces
 
 Praktycznie tego samego dnia w którym odbył się drugi etap, otrzymałem informację zwrotną, że dostałem się na stanowisko programisty.
+

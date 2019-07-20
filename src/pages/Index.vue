@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <PostCard />
-    <Pager :info="$page.posts.pageInfo" />
+    <Pager class="pagination" :info="$page.posts.pageInfo" />
   </Layout>
 </template>
 <page-query>
@@ -38,8 +38,4 @@ export default {
 };
 </script>
 
-<style>
-.home-links a {
-  margin-right: 1rem;
-}
-</style>
+

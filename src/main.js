@@ -4,7 +4,9 @@
 import DefaultLayout from "~/layouts/Default.vue";
 import "~/assets/style/main.scss";
 import "prismjs/themes/prism.css";
-export default function(Vue, { router, head, isClient }) {
+import 'prismjs/themes/prism-okaidia.css';
+
+export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
   Vue.component("Layout", DefaultLayout);
 
@@ -30,4 +32,5 @@ export default function(Vue, { router, head, isClient }) {
     name: "google-site-verification",
     content: "qVCsJdukxGzeBaEnyBItlMpHM4oINE9GhznID4iD-ZM"
   });
+
 }
