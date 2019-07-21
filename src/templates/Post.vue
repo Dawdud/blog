@@ -14,7 +14,7 @@
 query Post ($path: String!) {
   post: post (path: $path) {
       title
-      date (format: "D MMMM, YYYY")
+      date (format: "D MMMM, YYYY", locale:"pl")
       content
       image
    

@@ -9,8 +9,8 @@
         </strong>
       </div>
       <nav class="nav">
-        <g-link class="nav__link" to="/">Home</g-link>
-        <g-link class="nav__link" to="/about">About</g-link>
+        <g-link class="nav__link" to="/">HOME</g-link>
+        <g-link class="nav__link" to="/about">ABOUT</g-link>
       </nav>
     </header>
     <slot />

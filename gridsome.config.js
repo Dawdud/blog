@@ -25,6 +25,14 @@ module.exports = {
       }
     },
     {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "about/**/*.md",
+        typeName: "About",
+
+      }
+    },
+    {
       use: "@gridsome/plugin-google-analytics",
       options: {
         id: "UA-116838634-2"

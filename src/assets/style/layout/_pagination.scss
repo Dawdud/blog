@@ -5,6 +5,13 @@
     flex-direction: row;
     justify-content: center;
     padding: 20px;
+    .active{
+
+        color:$first-color;
+       
+        background-color: $background-color;
+    
+}
     a{
         font: $pagination-font;
         text-decoration: none;
@@ -15,15 +22,15 @@
         margin: 10px;
         height: 30px;
         width: 30px;
+        border: 1px solid transparent;
         border-radius: 50%;
         background-color: white;
-        transition-property: opacity;
-        -o-transition:  .5s ease-in-out;
-        -ms-transition:  .5s ease-in-out;
-        -moz-transition:  .5s ease-in-out;
-        -webkit-transition:  .5s ease-in-out;
+        -moz-transition: all .4s ease-in;
+        -o-transition: all .4s ease-in;
+        -webkit-transition: all .4s ease-in;
+        transition:  all .4s ease-in;
         
-        transition:.5s;
+        
         
         
         &:hover{

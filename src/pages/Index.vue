@@ -17,7 +17,7 @@ query Posts ($page: Int){
     edges {
       node {
         title
-        date (format: "D MMMM, YYYY")
+        date (format: "D MMMM, YYYY", locale: "pl")
         description
         image
         path
