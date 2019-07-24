@@ -7,7 +7,7 @@ image: "./images/storage-1209606_1920.jpg"
 slug: first
 ---
 
-Gdy zaczynałem naukę Vue, sloty wydawały mi się trudne w użyciu i nie do końca wiedziałem w jaki sposób mógłbym ich użyć? Szybko więc się odbiłem od tematu i pisałem kod nawet nie rozważając ich użycia. Zdecydowanie był to błąd i dopiero po jakimś czasie zrozumiałem jak ogromny potencjał tkwi w wykorzystaniu slotów. Podzielę się trochę wiedzą na ich temat oraz tym jak z nich korzystam.
+Gdy zaczynałem naukę Vue, sloty wydawały mi się trudne w użyciu i nie do końca wiedziałem dlaczego miałbym ich użyć? Szybko więc się odbiłem od tematu i pisałem kod nawet nie rozważając ich użycia. Zdecydowanie był to błąd i dopiero po jakimś czasie zrozumiałem jak ogromny potencjał tkwi w wykorzystaniu slotów. Podzielę się trochę wiedzą na ich temat oraz tym jak z nich korzystam.
 
 # Koncepcja slotów
 
