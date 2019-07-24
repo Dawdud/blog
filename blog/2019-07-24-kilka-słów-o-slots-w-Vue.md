@@ -11,8 +11,8 @@ Gdy zaczynałem naukę Vue, sloty wydawały mi się trudne w użyciu i nie do ko
 
 # Koncepcja slotów
 
-Zakładam, że ktoś kto będzie czytał ten post będzie już znał podstawy Vue i z tego względu też nie chcę skupiać się w tym poście na objaśnianiu podstawowych pojęć związanych z Vue.
-Sloty ogólne rzecz biorąc są mechanizmem, który pozwala nam na tworzenie komponentów wielokrotnego użytku. Sloty na pewno ułatwiają korzystanie z pewnej znanej programistom reguły DRY( Don’t Repeat Yourself). Cały trik polega na tym że sloty dają nam możliwość umieszczenia lub zmiany treści jeżeli komponent dziecka zaimportujemy do rodzica. Sloty możemy rozumieć jako miejsce w ktorym możemy umieścić nową treść lub pozostawić domyślną, którą zadeklarowaliśmy.
+Zakładam, że ktoś kto będzie czytał ten post będzie już znał podstawy Vue i z tego względu też nie chcę skupiać się w tym poście na objaśnianiu podstawowych pojęć związanych z tym frameworkiem.
+Sloty ogólne rzecz biorąc są mechanizmem, który pozwala nam na tworzenie komponentów wielokrotnego użytku. Mechanizm ten na pewno ułatwia korzystanie z pewnej znanej programistom reguły DRY( Don’t Repeat Yourself). Cały trik polega na tym że sloty dają nam możliwość umieszczenia lub zmiany treści jeżeli komponent dziecka zaimportujemy do rodzica. Sloty w Vue.js możemy rozumieć jako miejsce w ktorym umieszczamy nową treść lub pozostawiamy tą domyślnie zadeklarowaną.
 
 > Child.vue
 
@@ -54,8 +54,8 @@ Jak widać powyżej w rodzicu możemy dodać dowolną treść czego efektem osta
 </div>
 ```
 
-Tutaj też warto nadmienić, że możemy użyć nie jeden raz a kilka razy slotów w naszym komponencie dziecka, dzięki czemu możemy na przykład za pomocą slotów
-wyszczególnić header, footer i załóżmy section. Jednakże aby użyć więcej niż jednego slotu musimy każdemu poszczególnemu slotowi nadać nazwę do której będziemy się odnosili.
+Tutaj też warto nadmienić, że możemy użyć nie jeden a kilka razy slotów w naszym komponencie dziecka, dzięki czemu będziemy mogli na przykład za pomocą mechanizmu
+wyszczególnić header, footer i section. Jednakże aby użyć więcej niż jednego slotu w komponencie musimy każdemu poszczególnemu slotowi nadać nazwę do której będziemy się odnosili.
 
 > Child.vue
 
@@ -93,7 +93,7 @@ wyszczególnić header, footer i załóżmy section. Jednakże aby użyć więce
 </template>
 ```
 
-Istnieje też coś co nazywamy Scoped slots i są one szczególnie przydatne jeżeli chcielibyśmy przekazać dane z komponentu dziecka do template’u komponentu rodzica, a następnie je wyrenderować.
+Istnieje też coś co nazywamy Scoped slots. Wymieniony rodzaj slotów jest szczególnie przydatny jeżeli chcielibyśmy przekazać dane z komponentu dziecka posiadajcego sloty do rodzica.
 
 > Child.vue
 
@@ -130,5 +130,5 @@ Istnieje też coś co nazywamy Scoped slots i są one szczególnie przydatne je�
 
 ## Dlaczego korzystam z Slotów?
 
-Sloty są dla mnie mechanizmem, który pozwala mi na przykład napisać komponent modal, który w różny sposób wykorzystam wielokrotnie. Oczywiście też można spróbować zastosować sloty w przypadku samego layoutu. Czytałem zresztą ostatnio, że biblioteki UI korzystają z tego mechanizmu by na przykład stworzyć komponent nawigacji? Sloty również przydają się w przypadku pisania renderless components w Vue. Na ten temat postaram się jeszcze coś napisać niebawem.
+Sloty są dla mnie mechanizmem, który pozwala mi na przykład napisać komponent modal, który wykorzystam wielokrotnie na wiele sposobów. Oczywiście też można spróbować zastosować sloty w przypadku samego layoutu. Czytałem ostatnio, że biblioteki UI korzystają z tego mechanizmu by na przykład stworzyć komponent nawigacji? Sloty również przydają się w przypadku pisania renderless components w Vue. Na ten temat postaram się jeszcze coś napisać niebawem.
 [Tutaj można znaleźć nieco więcej informacji o samym renderless components](https://css-tricks.com/building-renderless-vue-components/). [Tutaj zaś można znaleźć informacje na temat samych slotów](https://www.smashingmagazine.com/2019/07/using-slots-vue-js/).
