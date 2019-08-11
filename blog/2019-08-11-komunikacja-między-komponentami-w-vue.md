@@ -12,7 +12,7 @@ slug: first
 Ostatnio nieco myślałem na temat samej komunikacji między komponentami w przypadku Vue,
 temat jest o tyle ciekawy, że możemy realizować tą komunikację na parę sposobów. Na tą chwilę myślę o jakichś dwóch lub trzech postach, które pojawią się na tym blogu i będą związane z tym zagadnieniem. Dziś postaram się przedstawić tą najprostszą możliwą komunikację między dwoma komponentami czyli rodzicem, a dzieckiem.
 
-#Czym są propsy i jak wygląda komunikacja między komponentem rodzica, a dziecka?
+# Czym są propsy i jak wygląda komunikacja między komponentem rodzica, a dziecka?
 
 Załóżmy, że napisaliśmy jakiś komponent, który zawiera dane, które możemy wyświetlić używając
 template’u.
@@ -97,7 +97,7 @@ export default {
 </script>
 ```
 
-##Zapis propsów
+## Zapis propsów
 
 Tutaj też można zaznaczyć, że możemy propsy przekazywać w tablicy jako zwykłe stringi, ale o wiele lepszym rozwiązaniem jest to by zadeklarować jako obiekt i przedstawić typ danej zmiennej
 dzięki temu nasz kod będzie nieco czytelniejszy.
@@ -185,4 +185,4 @@ export default {
 ```
 
 Props i emit są to najczęściej wykorzystywane mechanizmy do prostej komunikacji między dzieckiem, a rodzicem. Tutaj też warto na pewno wspomnieć, że możemy emitować dane z dziecka, ale to rodzic będzie decydował w jaki sposób zostaną wykorzystane. Dobrym przykładem może być że klikając na przycisk zamknięcia okna modalnego wykonamy emit do rodzica zmieniając
-wartość zmiennej ``showModal``` z true na false. [Tutaj można odnaleźć oficjalny przykład.](https://jsfiddle.net/yyx990803/mwLbw11k/?utm_source=website&utm_medium=embed&utm_campaign=mwLbw11k)
+wartość zmiennej `showModal` z true na false. [Tutaj można odnaleźć oficjalny przykład.](https://jsfiddle.net/yyx990803/mwLbw11k/?utm_source=website&utm_medium=embed&utm_campaign=mwLbw11k)
