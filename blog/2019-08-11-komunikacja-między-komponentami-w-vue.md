@@ -1,6 +1,6 @@
 ---
 title: Komunikacja między komponentami w Vue.
-date: 2019-07-30 20:49:34
+date: 2019-08-11 22:37:34
 description: "Ostatnio nieco myślałem na temat samej komunikacji między komponentami w przypadku Vue,
 temat jest o tyle ciekawy, że możemy realizować tą komunikację na parę sposobów. Na tą chwilę myślę o jakichś dwóch lub trzech postach, które pojawią się na tym blogu i będą związane z tym zagadnieniem. Dziś postaram się przedstawić tą najprostszą możliwą komunikację między dwoma komponentami czyli rodzicem, a dzieckiem.
  "
@@ -102,7 +102,7 @@ export default {
 Tutaj też można zaznaczyć, że możemy propsy przekazywać w tablicy jako zwykłe stringi, ale o wiele lepszym rozwiązaniem jest to by zadeklarować jako obiekt i przedstawić typ danej zmiennej
 dzięki temu nasz kod będzie nieco czytelniejszy.
 
-```
+```js
 <script>
 export default {
   name: "child",
@@ -155,7 +155,7 @@ W komponencie rodzica emit wywołujemy przy pomocy nazwy eventu, który sobie na
 
 > komponent rodzica
 
-```
+```js
 <template>
   <div>
     <p>{{importantData}}</p>
