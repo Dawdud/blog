@@ -1,0 +1,114 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  &__title {
+    text-decoration: none;
+    color: black;
+    &:hover {
+      .underline {
+        background-size: 100% 100%;
+      }
+    }
+    @include smartphone {
+      font: $post-title-font-m;
+    }
+    @include tablet {
+      font: $post-title-font-t;
+    }
+  }
+  &__header {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &__content {
+    width: 79%;
+
+    font: $post-content-font;
+    display: flex;
+    color: $post-content-color;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--blog {
+      padding: 20px 0px 50px 0;
+    }
+    .post__read {
+      height: 6em;
+      padding-bottom: 20px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    p {
+      line-height: 1.9em;
+    }
+
+    @include smartphone {
+      font: $post-date-font-m;
+    }
+    @include tablet {
+      font: $post-date-font-t;
+    }
+  }
+  &__date {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: $post-date-col;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .2em;
+    .calendar {
+      padding-right: 10px;
+      font-size: 0.9em;
+    }
+    @include smartphone {
+      font: $post-date-font-m;
+    }
+    @include tablet {
+      font: $post-date-font-t;
+    }
+  }
+  &__cart {
+    background-color: white;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include smartphone {
+      width: 95%;
+    }
+    @include tablet {
+      width: 70%;
+    }
+    @include desktop {
+      width: 46%;
+    }
+  }
+
+  &__thumbnail {
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.underline {
+  width: calc(100%);
+  background-image: linear-gradient(transparent calc(100% - 2px), black 2px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.7s;
+}

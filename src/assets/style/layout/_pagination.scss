@@ -1,0 +1,45 @@
+@import "../utils/variables";
+
+.pagination{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    .active{
+
+        color:$first-color;
+       
+        background-color: $background-color;
+    
+}
+    a{
+        font: $pagination-font;
+        text-decoration: none;
+        line-height: 30px;
+        color: black;
+        padding: 5px;
+        text-align: center;
+        margin: 10px;
+        height: 30px;
+        width: 30px;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: white;
+        -moz-transition: all .4s ease-in;
+        -o-transition: all .4s ease-in;
+        -webkit-transition: all .4s ease-in;
+        transition:  all .4s ease-in;
+        
+        
+        
+        
+        &:hover{
+           
+        border: 1px solid black;
+        color: $first-color;
+        
+        
+            
+        }
+    }
+}
