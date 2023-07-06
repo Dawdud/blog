@@ -29,8 +29,7 @@ query {
 </static-query>
 
 <style lang="scss">
-</style>
-/*body {
+body {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   overflow-x: hidden;
@@ -39,5 +38,7 @@ query {
 
 .nav__link {
   margin-left: 20px;
-}*/
+}
+</style>
+/**/
 
